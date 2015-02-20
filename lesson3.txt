@@ -8,12 +8,14 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Automatically might be resource heavy with multiple remotes.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    clones are direct copy (remote called origin) with no shared origin.
+    forks are a copy on github's repository which link back to an origin
+    branches are a local copy which links back to shared history with its parent
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
