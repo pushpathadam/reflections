@@ -1,0 +1,45 @@
+1. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+  It highlighted the bug. A more graphic tool like xdiff would have been faster.
+
+2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+  It lets you see where you've introduced features or bugs and quickly revert to a previous version, grab a snippet of working code or branch off a working point.
+
+3. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+	Automatically saving might not let the user revert back to a previous version unless they have a rigorous parallel system of logging work by time. 
+	With manual commits the chief pro’s include keeping the number of versions stored more manageable,and keeping an easily verifiable method of tracking commits by comments
+  A con for manual commits is that the user has to use some judgement about when to commit, and the ability to revert is heavily connected to how good the comments are.
+
+4. How can you use the commands git log and git diff to view the history of files?
+
+	Use git log to view a log or history of all the committed changes to the repository. Git diff allows you to view the changes between two versions.
+
+5. How might using version control make you more confident to make changes that could break something?
+
+	The ability to go back to a working version at any time lets you experiment and make changes. A failure only causes you to lose time involved experimenting and reverting, not time to recreate a working version from scratch.
+
+6. Now that you have your workspace set up, what do you want to try using Git for?
+	I will try it out on some code that I’d like to try out that’s on github.
+
+—
+concepts not explained. 
+- no central server. 
+- origin vs master. Confused about whether the terms mean much
+Should not be doing an octopus 
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+You are in 'detached HEAD' state 
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+Useful Site
+
+gitref.org
+
+Extra Notes on git setup on a mac
+1. Save this file in your home directory with the name git-completion.bash.
+2. Save this file in your home directory with the name git-prompt.sh.
+3. Save bash_profile_course from the Downloadables section in your home directory with the name .bash_profile. 
+3. Important, I merged .bash_profile with .bash_login. Either is ok
+4. For Atom Add this line to the .login: alias atom="/Applications/Atom.app/Contents/MacOS/Atom"
+5. git config --global core.editor "atom --wait"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+width="100%"
