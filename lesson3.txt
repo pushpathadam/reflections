@@ -17,6 +17,21 @@ use one instead of another?
     forks are a copy on github's repository which link back to an origin
     branches are a local copy which links back to shared history with its parent
 
+inside recipes
+git init
+  551  git remote add origin https://github.com/pushpathadam/recipes.git
+  553  git pull https://github.com/pushpathadam/recipes.git
+  555  atom espresso.txt
+  556  git add espresso.txt
+  557  git commit espresso.txt
+  560  git push origin master
+
+or
+ git remote add origin https://github.com/pushpathadam/reflections.git
+  496  git push -u origin master
+
+Can't push back up from a clone vs a remote is fine.
+  
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
